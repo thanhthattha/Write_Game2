@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game đánh chữ!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="tro_choi_danh_chu">
+        <div class="noi_dung shadow p-3">
+            <header class="text-center">
+                <h1><i class="fa fa-gamepad" aria-hidden="true"></i> Trò Chơi Đánh Chữ</h1>
+            </header>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <p class="quy_dinh">
+                        Các bạn hãy đánh chữ dưới đây với thời gian đối đa <span class="text-success"
+                            id="thoi_gian">10</span> giây:
+                    </p>
+                    <h2 class="display-2 mb-2" id="chu_hien_tai">Xin Chào!</h2>
+                    <input type="text" class="form-control form-control-lg rounded-pill shadow p-4"
+                        placeholder="Bắt Đầu Nhập Chữ..." id="chu_duoc_nhap" autofocus>
+                    <h4 class="mt-2" id="thong_bao"></h4>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h3>Thời Gian Còn Lại:<br />
+                                <span id="giay">0</span>
+                            </h3>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>
+                                Điểm Của Bạn:<br />
+                                <span id="diem">0</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="text-center bg-primary shadow text-white p-2 rounded mb-4">
+                        <h4><i class="fa fa-info-circle" aria-hidden="true"></i> Hướng Dẫn</h4>
+                        <p>
+                            Các bạn nhập mỗi chữ ở trên với thời gian không được vượt quá 10 giây. Để chơi lại thì bạn
+                            chỉ cần nhập chữ đang hiển thị hiện tại và điểm sẽ tự động được tính lại.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="display-2 mb-2" id="chu_hien_tai"></h2>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+<script src="index.js"></script>
+
+</html>
